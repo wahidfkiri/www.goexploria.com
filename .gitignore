@@ -2,8 +2,6 @@
 
 /public/hot
 #/public/vendor/
-/public/slick
-/public/phpinfo.php
 
 /storage/*.key
 /storage/logs/*
