@@ -1,0 +1,20 @@
+/******************************
+  Style propre au thème défini
+*******************************/
+
+#header .topnav {
+    background: #931f22 !important;
+}
+
+#carousel_index {
+  max-width: 75%;
+}
+
+#index_newsletter {
+  width: 24.5%;
+}
+
+#logo_company_site img {
+    min-width: 250px;
+	  max-width: 300px;
+}

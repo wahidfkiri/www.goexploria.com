@@ -1,0 +1,154 @@
+
+.navbar {
+	position: relative;
+	min-height: 0px;
+	margin-bottom: 0;
+	border: none;
+}
+
+.amazonmenu ul{
+	font: normal 12px Verdana;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+.amazonmenu ul li{
+	position: static; /* menu li items should have position set to static */
+
+}
+.amazonmenu .issub ul{
+	height:280px;
+}
+.amazonmenu .issub ul li{
+	width:20%;
+}
+.amazonmenu .issub ul li a:hover::after, .amazonmenu .issub ul li a:focus::after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: 5px;
+	width: 100%;
+	height: 100%;
+	background: #1d3952;
+	opacity: 0.2;
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	transform: translateY(5px);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.amazonmenu .issub ul li a img{
+	margin-top:15px;
+}
+.amazonmenu > ul{
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	width: 100%;
+	height: 42px;
+	position: relative;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+}
+
+.amazonmenu > ul li a{
+	color: #000;
+	display: block;
+	overflow: auto;
+	padding: 12px;
+	position: relative;
+	text-decoration: none;
+	/* text-indent: 10px; */
+	background-color: #fff;
+	font-size: 15px;
+}
+
+.amazonmenu > ul li a::before {
+	color: #1d3952;
+	text-shadow: 0 0 1px rgba(54, 46, 118, 0.3);
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.amazonmenu > ul li a::after {
+	content: '';
+	position: absolute;
+	left: 0px;
+	bottom: 5px;
+	width: 100%;
+	height: 2px;
+	background: #1d3952;
+	opacity: 0;
+	-webkit-transform: translateY(5px);
+	-moz-transform: translateY(5px);
+	transform: translateY(5px);
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+	pointer-events: none;
+}
+.amazonmenu ul li a:hover::before, .amazonmenu ul li a:focus::before, .amazonmenu ul li.hassub.selected > a::before  {
+	opacity: 0;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+.amazonmenu ul li a:hover::after, .amazonmenu ul li a:focus::after, .amazonmenu ul li.hassub.selected > a::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+.amazonmenu ul li a:hover, .amazonmenu ul li.hassub.selected > a{ /* style of hover and selected menu item links */
+color:#1f4363;
+}
+
+.amazonmenu ul li > div, .amazonmenu ul li > ul{ /* Sub menus (Could be a DIV or UL wrapper) style */
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	display: none;
+	font-weight: normal;
+	width: 100%;
+	height: auto;
+	left: 0;
+	padding: 10px;
+	position: absolute;
+	top: 41px;
+}
+
+
+/* ###### CSS Media queries ###### */
+
+@media screen and (max-width: 480px){ /* When screen size is 480px */
+	.amazonmenu ul li > div, .amazonmenu ul li > ul{
+		left: 30px; /* Stack the sub menus so they take up less space */
+	}
+
+	.amazonmenu > ul li.hassub.selected::after{ /* Add "veil" to parent menus */
+		background: #eee;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: .8;
+		pointer-events: none;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+	}
+}

@@ -1,0 +1,79 @@
+/*
+* Feuille css chargé dans les sites et dans goExploria
+*/
+/*****************************
+ TOPBAR
+*****************************/
+.topbar {
+  background-color: transparent;
+  color: black;
+  margin-bottom: 1em;
+  width: 100%;
+  height: 30px;
+}
+.topbar a {
+  color:black;
+}
+.topbar .right {
+  float: right;
+}
+.topbar .right a i.fa {
+  font-size: 30px;
+}
+.logo-facebook:hover {
+  color: #3b5998;
+}
+.logo-twitter:hover {
+  color: #1da1f2;
+}
+.logo-google-plus:hover {
+  color: #dd4b39;
+}
+.logo-linkedin:hover {
+  color: #0077b5;
+}
+.logo-instagram:hover {
+  color: #405de6;
+}
+.logo-youtube:hover {
+  color: #cd201f;
+}
+.logo-pinterest:hover {
+  color: #bd081c;
+}
+.logo-reddit:hover {
+  color: #ff4500;
+}
+
+
+
+/* Marie Modifs */
+
+img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+
+table.table-striped a {
+	word-break: break-all;
+}
+
+a#a_photo {
+	display: none;
+}
+
+/*
+ * TODO: À retirer et modifié le html d'ou sa vient
+ * : la cible a besoin de container-fluid
+*/
+@media (max-width: 700px) {
+  .col-md-3.col-xs-3.right {
+    width: 100% !important;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .col-md-6.col-xs-6.centered{
+    width: 100%;
+  }
+}

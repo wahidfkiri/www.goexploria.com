@@ -1,0 +1,491 @@
+/******************************
+  Style propre au thème défini
+*******************************/
+.body-blk{
+    background-color:#000;
+}
+ul, ol {
+
+    padding-left: 0;
+}
+
+.btn-group {
+    margin-left: 15px;
+}
+
+.btn-language {
+    background-color: #fff;
+}
+
+.open > .dropdown-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    width: 100%;
+}
+
+#header .topnav {
+    background: #000 !important;
+    padding: 30px 0;
+}
+
+#header {
+    height: auto;
+    padding: 30px 0;
+}
+.header-bg{
+    background-color:transparent;
+    padding: 30px 0;
+}
+.body-bg {
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.wrap-info-cie {
+    margin-top: 15px;
+}
+
+.info_company a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.info_company a:hover {
+    color: #fff;
+}
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #428bca;
+    border-color: #428bca;
+    color: #06335c !important;
+}
+
+.btn-group.open > .dropdown-menu {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    margin-left: -50px;
+    width: 120px;
+}
+
+.dropdown-menu {
+    background-color: #428bca;
+    color: #fff !important;
+    border: none;
+    box-shadow: 0;
+
+}
+
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item:focus {
+    color: #06335c !important;
+}
+
+ul.dropdown-menu .btn-primary {
+    background-color: transparent !important;
+    border-color: none !important;
+}
+
+.dropdown-menu > li > a {
+    background-color: transparent;
+    font-size:18px;
+    white-space: pre-wrap;
+    text-align: right;
+}
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: transparent;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #06335c !important;
+    background-color: transparent;
+}
+
+#content {
+    background-color:#fff;
+    padding: 3px 0;
+    min-height: 300px;
+}
+
+.carousel {
+    min-width: 100%;
+    max-height: 380px;
+}
+
+.carousel .item {
+    height: 380px;
+}
+
+#carousel_index .item img {
+    min-width: 100% !important;
+}
+
+.carousel-caption {
+    bottom: 0;
+    left: 20%;
+    display: flex;
+    flex-flow: column;
+    height: 250px;
+    align-items: center;
+}
+
+.carousel-caption h1 {
+    font-weight: 700;
+}
+
+.carousel-caption h1, .carousel-caption h4 {
+    background-color: transparent;
+}
+
+.carousel-caption a {
+    font-size: 0.89em;
+    display: block;
+    background-color: #900909;
+    padding: 10px 30px;
+    color: #fff;
+}
+
+.carousel-caption a:hover, .carousel-caption a:active, .carousel-caption a:focus {
+    background-color: #4a0909;
+    color: #fff;
+}
+#logo_company_site img {
+    min-width: 250px;
+    max-width: 300px;
+}
+
+.topbar {
+    margin-bottom: 0;
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.topbar a {
+    color: #fff;
+    display: inline-block;
+    padding: 0 7px;
+}
+
+a:hover, a:focus {
+
+    text-decoration: none;
+}
+
+.nav {
+    margin-right: 0 !important;
+}
+.navbar-nav > li > a {
+    padding: 14px 10px;
+    font-size: 18px;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+
+    background-color: transparent;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    width: auto;
+    margin: 0;
+}
+
+.navbar-nav .btn-primary {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.navbar-nav .btn-primary:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#logo_company_site {
+    margin: 0;
+    text-align: unset;
+    padding: 0;
+    border: 0;
+    margin-bottom: 0;
+    float: none;
+}
+
+.section-main {
+    padding: 0 0 50px 0;
+}
+
+.wrap-galerie {
+    padding:0;
+}
+
+h2.separator {
+    margin-top:0;
+    margin-bottom: 30px;
+}
+.copyright {
+    color: #fff;
+}
+.creator {
+    color: #fff;
+}
+section.section-footer {
+    height: auto;
+    padding: 30px 0;
+}
+
+.nav-footer {
+    background-color: transparent;
+    padding: 0;
+}
+section.section-footer ul {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+section.section-footer ul li {
+    list-style-type: none;
+    margin: 5px 0;
+}
+
+section.section-footer ul li a {
+    color: #fff;
+}
+
+section.section-footer .form-control {
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: none;
+    border-radius: 0px;
+    box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0);
+    transition: border-color none, box-shadow none;
+    /* margin: 15px 0; */
+    height: 50px;
+    margin-right: 30px;
+}
+
+.form-horizontal {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#index_newsletter {
+    float: none;
+    color: #fff;
+    background-color: transparent;
+    padding:0;
+    margin-top: -60px;
+    min-height:200px;
+    text-align: center;
+}
+
+#index_newsletter p {
+    margin: 0 0 15px;
+    text-transform: uppercase;
+}
+
+#index_newsletter .send-btn {
+    color: #fff;
+    padding: 16px 18px;
+    font-size: 0.84em;
+    font-weight: 700;
+    background-color: #06335c;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    text-transform: uppercase;
+}
+
+section.section-footer .wrap-info-comp {
+    margin: 5px 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-end;
+}
+
+section.section-footer .tel a {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+section.section-footer .info_company {
+    margin: -5px 0;
+    color: #fff;
+}
+
+section.section-footer .copyright {
+    padding-top: 30px;
+}
+@media (max-width: 1280px){
+    #menu {
+        right: 0px !important;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .carousel {
+    }
+
+    .header-bg {
+    }
+
+    #toggle {
+        float: right;
+        left: -7px;
+        bottom: -65px;
+    }
+
+    #menu {
+        width: 280px;
+        padding: 0px 10px 0 0;
+        right: 15px !important;
+        top: 45px;
+    }
+
+    .navbar-nav {
+        flex-flow: column;
+        align-items: flex-end;
+        background-color: #06335c;
+    }
+
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        width: 272px;
+        text-align: right;
+    }
+
+    .btn-group.open > .dropdown-menu {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        margin-left: -92px;
+        width: auto;
+    }
+
+    .open > .dropdown-menu {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+
+    .dropdown-menu > li > a {
+        white-space: normal;
+        text-align: right;
+    }
+}
+
+@media (max-width: 1024px) {
+    #menu {
+        width: 312px;
+        padding: 0px 40px 0 0;
+        right: 15px !important;
+        top: 45px;
+    }
+}
+
+@media (max-width: 991px) {
+
+
+    #menu {
+
+    }
+    .topbar .right a i.fa {
+        font-size: 22px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-indicators {
+        bottom: 0px;
+    }
+}
+
+@media (max-width: 767px) {
+    #toggle {
+        left: 4px;
+        bottom: -65px;
+    }
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        text-align: right;
+        margin-right: 0;
+    }
+    #menu {
+        right: 5px !important;
+    }
+    #logo_company_site {
+        text-align: center;
+    }
+
+    .topbar {
+        justify-content: flex-end;
+        margin-top: 25px;
+    }
+
+    .wrap-info-cie {
+        text-align: center;
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        background-color: #428bca;
+    }
+
+    .topbar .right {
+        display: none;
+    }
+
+    .carousel-caption {
+        height: 210px;
+    }
+
+    .form-horizontal {
+
+        flex-flow: column;
+        justify-content: center;
+    }
+
+    section.section-footer .form-control {
+        margin-bottom: 32px;
+    }
+
+    .wrap-galerie {
+        padding-top: 16px;
+    }
+
+    section.section-footer ul {
+        align-items: center;
+        padding:40px 0;
+    }
+
+    section.section-footer .wrap-info-comp {
+        margin: 0px 0;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .carousel-caption {
+        height: 210px;
+        display: none;
+    }
+    #index_newsletter{
+        padding: 32px 0px 0;
+    }
+}
+
+@media (max-width: 575px) {
+
+}
+@media (max-width: 320px){
+    .container {
+        width: auto;
+    }
+}

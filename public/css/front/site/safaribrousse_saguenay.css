@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+#logo_company_site {
+    top: 0;
+    margin: 0 auto;
+    text-align: left;
+    float: left;
+    width: auto !important;
+    padding: 0;
+    border: 0;
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#tourisme-tab .table.table-striped {
+	display: none !important;
+}

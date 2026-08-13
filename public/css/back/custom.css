@@ -1,0 +1,174 @@
+body {
+    font: 75%/150% "Lato", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 1.2em;
+    line-height: 150%;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+
+.section-main {
+    margin-top: 20px;
+}
+
+h2 {
+  font-size:1.52em;
+}
+h3 {
+    font-size:1.17em
+}
+
+
+.page-container {
+  table-layout: inherit !important;
+}
+
+.page-container.horizontal-menu header.navbar ul.nav > li.dropdown.open:after {
+  border-color: transparent transparent #aaabae transparent;
+}
+
+.page-container.horizontal-menu .dropdown-menu {
+    width: 220px !important;
+  background: #272b34 !important;
+  border: 1px solid rgba(69, 74, 84, 0.5) !important;
+}
+.page-container.horizontal-menu .dropdown-menu li {
+    border-bottom: 1px solid rgba(69, 74, 84, 0.5) !important;
+}
+.page-container.horizontal-menu .dropdown-menu li:hover, .page-container.horizontal-menu .dropdown-menu li a:hover {
+    background: #363c47 !important;
+  color: white !important;
+}
+
+.page-container.sidebar-collapsed .sidebar-menu.fixed .sidebar-menu-inner {
+  position: fixed !important;
+}
+
+.page-container .sidebar-menu .sidebar-menu-inner.ps-container {
+  height: auto !important;
+}
+
+input.full-width {
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .page-container .sidebar-menu.fixed .sidebar-menu-inner {
+    top: 62px !important;
+
+    /*bottom: auto;*/
+  }
+
+  .account{
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .sidebar-menu {
+    display: none !important;
+  }
+}
+
+
+.icon-right, .icon-right i {
+  margin-top: 20px !important;
+  font-size: 12px !important
+}
+
+
+.btn-warning {
+  color: black;
+}
+
+.logo {
+    color: white !important;
+    font-size: 24px;
+    padding-top: 5px;
+ }
+
+ .logo-env {
+  padding: 20px !important;
+ }
+ 
+ table td {
+    padding: 5px;
+ }
+ 
+ 
+ img {
+  width: 100%;
+ }
+
+.selected, .available {
+  width: 45% !important;
+}
+
+ul.selected, ul.available {
+  width: 100% !important;
+}
+
+.ui-multiselect {
+  width: 100% !important;
+}
+
+.connected-list {
+  height: 150px !important;
+}
+
+.ui-multiselect input.search {
+  height: 18px !important;
+  width: 120px;
+  border: 1px solid black;
+}
+
+.error {
+  width: 100%;
+  text-align: center;
+}
+
+.error-message {
+  color: #2E64FE;
+  font-size: 16px;
+  font-weight: bold;
+}
+.navbar-brand a {
+  color:white;
+}
+
+.tile-stats {
+  margin: 10px;
+}
+
+.plain {
+  position: relative;
+  margin:auto;
+  width: 300px;
+  height: 300px;
+}
+
+.registred {
+  cursor: pointer;
+}
+
+.datepicker-dropdown {
+    background: white !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.input-digit-sm {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  clear: left;
+}
+
+td .selectize-control.single {
+  margin: 0;
+}

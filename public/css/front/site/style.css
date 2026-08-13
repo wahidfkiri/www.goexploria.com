@@ -1,0 +1,122 @@
+/******************************************
+  STYLE PROPRE À TOUT LES SITES ET
+  INCLUS DANS TOUS LES THÈMES
+******************************************/
+
+#header {
+  height: 110px;
+}
+
+#header .topnav {
+
+}
+
+#header .topnav .container {
+  position: relative;
+  padding: 0 15px;
+  max-width: 1170px;
+}
+
+#header .topnav #logo {
+  position: absolute;
+  left: 35px;
+  top: 2px;
+}
+
+#ariane {
+  background-color: #e7e7e7;
+  color: #222;
+  margin: 0;
+  padding: 0 12px 0 12px;
+  display: inline-block;
+  float: none !important;
+}
+
+#ariane li {
+  background: none !important;
+  line-height: 35px;
+  color: #555;
+}
+
+#ariane a {
+	font-size: 1em;
+	background: none !important;
+}
+
+ol.breadcrumb {
+	padding: 0px;
+	font-size:1em;
+	background: none !important;
+	margin: 0;
+	float: left;
+}
+#main-content{
+  padding:50px 15px;
+}
+.page-title-container .container {
+  padding: 0;
+}
+
+.page-title {
+  display: block;
+
+}
+
+.page-title h2.entry-title {
+  margin: 0;
+  padding: 5px 5px 5px 15px;
+  font-size: 1.75em;
+}
+
+.creator {
+  line-height: 34px;
+  color: #555;
+}
+
+#footer_newsletter {
+  color: #fff;
+  background-color: #285e8e;
+  padding: 10px 20px 40px 20px;
+}
+
+#footer_newsletter .send-btn {
+  color: #285e8e;
+  padding: 4px 10px;
+
+}
+
+.nav-footer {
+  background-color: #f7f7f7;
+  padding: 5px;
+}
+
+.breadcrumb > li + li::before {
+  color: #888;
+}
+
+#carousel_index {
+  float: right;
+  max-height: 380px;
+}
+
+#index_newsletter {
+  float: left;
+  color: #fff;
+  background-color: #285e8e;
+  padding: 10px 20px 40px 20px;
+  min-height: 344px;
+}
+
+#index_newsletter .send-btn {
+  color: #285e8e;
+  padding: 4px 10px;
+  font-size: 0.84em;
+}
+
+.copyright {
+  line-height: 0.8em;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #555;
+}

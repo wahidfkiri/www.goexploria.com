@@ -1,0 +1,75 @@
+<?php
+
+namespace App\Http\Controllers\Admin;
+
+use Illuminate\Http\Request;
+#use App\Models\Location;
+use App\Models\Country;
+use App\Models\Page;
+use Redirect;
+use App\Http\Controllers\Controller;
+use App\Http\Requests\PageRequest;
+
+class CountryPageController extends Controller {
+
+	// LOCATION TYPE
+	// GET ROUTES
+  public function add($countryCode) {
+		$country = Country::getByCode($countryCode);		
+		return view ( 'back.country.page.add', compact('country'));
+	}	
+	
+	public function edit($countryCode, $id) {
+		$country = Country::getByCode($countryCode);		
+		$page = Page::find( $id );
+		
+		return view ( 'back.country.page.edit' , compact('page', 'country'));
+	}
+
+
+	public function delete($countryCode, $id) {
+		Country::find( Country::getByCode($countryCode)->id )->pages()->detach($id);
+		Page::find($id)->delete();
+		
+		return Redirect::route('country.page.search', $countryCode )->with ( 'info', "La page a bien été supprimée");
+	}
+
+	public function visibility($countryCode, $id) {
+		$page = Page::find($id);
+		$page->is_visible = !$page->is_visible;
+		$page->save();
+		
+		return Redirect::route('country.page.search', $countryCode )->with ( 'info', "La page ".$page->name." est devenue " .strtolower($page->statut()) );
+	}
+
+	// Edit page d'un pays
+	public function search($countryCode) {
+		$country = Country::getByCode($countryCode);
+		$statuts = Page::statuts();		
+		
+		return view ( 'back.country.page.search', compact('country', 'statuts') );
+	}
+
+	// POST ROUTES
+  public function update(PageRequest $request, $countryCode, $id) {
+		$page = Page::find ($id);	
+		$page->set($request);
+		$page->save ();
+
+		return Redirect::route ( 'country.page.search', $countryCode )->with ( 'success', "La page \"".$page->name."\" a été modifiée avec succès");
+	} 
+  
+  public function register(PageRequest $request, $countryCode) {
+		$page = new Page();
+		$page->set($request);
+
+		$page->is_visible = $request->visible != null;
+		$page->save ();
+
+    // Attacher la page au pays
+    Country::find( Country::getByCode($countryCode)->id )->pages()->attach($page);
+    
+		return Redirect::route ( 'country.page.search', $countryCode )->with ( 'success', "La page \"".$page->name."\" a été ajoutée avec succès");;
+	}    
+  
+}

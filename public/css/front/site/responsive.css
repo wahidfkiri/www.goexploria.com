@@ -1,0 +1,159 @@
+/*
+ * Title:   Travelo - Travel, Tour Booking HTML5 Template - Responsive CSS file
+ * Author:  http://themeforest.net/user/soaptheme
+ */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[Table of contents]
+
+1. New Grid System
+2. Add clearfix in the grid system
+3. Styles for devices(>=992px and <=1199px)
+4. Styles for devices(<=1199px)
+5. Styles for devices(<=991px )
+6. Styles for devices(>=768px and <= 991px)
+7. Styles for devices(<=767px )
+8. Styles for devices(<=480px )
+9. Styles for devices(<=320px )
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* 1. New Grid System */
+.col-sms-1, .col-sms-2, .col-sms-3, .col-sms-4, .col-sms-5, .col-sms-6, .col-sms-7, .col-sms-8, .col-sms-9, .col-sms-10, .col-sms-11, .col-sms-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
+
+
+@media (max-width: 1199px) {
+  .page-title h2.entry-title {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 991px) {
+ .page-title h2.entry-title {
+    font-size: 1.1em;
+  }
+  #carousel_index {
+    float: none;
+    display: block;
+    min-width: 100%;
+    height: auto;
+    max-height: 290px;
+  }
+  
+  #carousel_index .item {
+    height: auto !important;
+  }
+  
+  #index_newsletter {
+    float: none;
+    display: block;
+    width: 100% !important;
+    min-height: 0px;
+    margin-top: 1px;
+  }
+  
+  .carousel-caption {
+    display: none;
+  }
+  
+  #medias-photo-tab .media {
+    width: 49% !important;
+  }
+  
+  #footer_newsletter {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 1024px) {
+  /* remove chaser in mobile */
+  
+  #logo_company_site {
+    margin-bottom: 5px !important;
+  }
+  #logo_company_site img {
+    max-width: 148px !important;
+  }
+  #toggle{
+   /* top: 50px;*/
+  }
+}
+/* 6. Styles for devices(>=768px and <= 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+    
+@media (min-width: 481px) and (max-width: 767px) {
+  /*.hidden-xs { display: block !important; }*/ 
+}
+
+/* 7. Styles for devices(<=767px ) */
+@media (max-width: 767px) {
+  /* remove chaser in mobile */
+  
+  #logo_company_site {
+    margin-bottom: 5px !important;
+  }
+  #logo_company_site img {
+    max-width: 148px !important;
+  }
+  #toggle {
+   /* top: 50px !important;*/
+  }
+  
+  #ariane li {
+    line-height: 24px;
+  }
+  
+  .copyright .col-xs-6 {
+    width: 100%;
+  }
+  
+  h1, .h1 {
+    font-size: 30px;
+  }
+  
+}
+    
+/* 8. Styles for devices(<=480px ) */
+@media (max-width: 480px) {
+  
+  #medias-photo-tab .media {
+    width: 100% !important;
+  }
+  
+  #header {
+    height: 90px;
+  }
+  
+  .section-main .page-title {
+    display: none;
+  }
+  
+  ol.breadcrumb {
+    font-size: 0.95em;
+  }
+  
+  h1, .h1 {
+    font-size: 23px;
+  }
+
+}
+    
+/* 9. Styles for devices(<=320px ) */
+@media (max-width: 320px) {
+  .container {
+    width: 314px; }
+
+  .row {
+    padding: 0 3px; }
+
+  .column-5-no-margin > * {
+    float: none; 
+  } 
+}

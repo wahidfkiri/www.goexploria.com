@@ -1,0 +1,31 @@
+/******************************
+  Style propre au thème défini
+*******************************/
+#header {
+  height: unset;
+}
+
+.carousel .item {
+  height: 344px;
+}
+
+@media (max-width: 480px) {
+  .section-main .page-title {
+      display: block;
+  }
+}
+
+@media (max-width: 750px) {
+  .carousel .item {
+    height: unset;
+  }
+}
+
+@media (max-width: 991px) {
+  #index_newsletter {
+    min-height: unset;
+  }
+  .carousel-caption {
+    display: none;
+  }
+}

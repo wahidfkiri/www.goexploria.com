@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#header .topnav {
+    background: transparent;
+}
+
+#header .topnav .container {
+    background-image: url(/images/gitedulacdocteur/banner.jpg);
+	max-height: 200px;
+}
+
+#ariane {
+    display: none !important;
+}
+
+#tourisme-tab table.table-striped {
+	display: none !important;
+}
+
+@media (max-width: 600px) {
+#header .topnav .container {
+    background-image: none !important;
+	max-height: 70px;
+}
+}

@@ -1,0 +1,42 @@
+<IfModule mod_headers.c>
+  # MULTIPLE DOMAIN (domain1\.com|domain2\.com)
+#  SetEnvIf Origin "^http(s)?://(.+\.)?(cedric-paquet\.com|lavageetboyauxsaguenay\.com)$" origin_is=$0  
+#  Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
+  
+  # Any domain
+  #Header always set Access-Control-Allow-Origin *
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+
+    RewriteEngine On
+
+    # Redirect to www
+#    RewriteCond %{HTTP_HOST} !^www\.(.+)$
+#    RewriteCond %{HTTP_HOST}   !^devsite\.(.+)$
+#    RewriteRule ^(.*) http://www.%{HTTP_HOST}/$1  [QSA,L,R=301]
+    
+#    # Redirect Trailing Slashes If Not A Folder...
+#    RewriteCond %{REQUEST_FILENAME} !-d
+#    RewriteRule ^(.*)/$ /$1 [L,R=301]
+    
+    # Handle Front Controller...
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+ 
+#    Options -MultiViews
+#    RewriteEngine On
+#    RewriteCond %{REQUEST_FILENAME} !-f
+#    RewriteRule ^ index.php [L]   
+    
+
+    # Handle Authorization Header
+#    RewriteCond %{HTTP:Authorization} .
+#    RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+</IfModule>

@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+function warmup {
+    echo -n "warming up:" $1 "-> "
+    curl -o /dev/null -s -w "%{time_total}\n" $1
+}
+
+BITBUCKET_USERNAME=$1
+
+echo 'Deploy: Updating Git working copy ...'
+git pull https://$BITBUCKET_USERNAME@bitbucket.org/studiowebselect/goexploria-dev.git
+
+echo 'Fixing permissions ...'
+sudo chown -R ubuntu:www-data .
+sudo find . -type f -exec chmod 664 {} \;
+sudo find . -type d -exec chmod 775 {} \;
+sudo chgrp -R www-data storage bootstrap/cache
+sudo chmod -R ug+rwx storage bootstrap/cache
+chmod +x deploy
+chmod +x artisan
+
+echo 'Updating deps ...'
+composer install
+
+echo 'Clearing caches and publishing assets ...'
+php artisan cache:clear
+php artisan config:clear
+php artisan vendor:publish --tag=public --force
+
+warmup "http://staging.goexploria.com"
+
+echo 'Deployment completed.'
+

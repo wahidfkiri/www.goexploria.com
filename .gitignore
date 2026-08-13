@@ -1,0 +1,65 @@
+/node_modules
+
+/public/hot
+#/public/vendor/
+/public/slick
+/public/phpinfo.php
+
+/storage/*.key
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+/.idea
+/.vagrant
+Homestead.json
+Homestead.yaml
+
+npm-debug.log
+.env
+
+.cache/
+.config/
+.local/
+
+nbproject/
+.Xauthority
+.bash_history
+
+.htaccess
+.htpasswd
+.viminfo
+
+# Archives et dumps
+*.tar
+*.sql
+*.xml
+
+# Garder les fichiers uploadés
+!public/uploads/
+!storage/imports/
+
+# Ignorer les fichiers temporaires système
+._*
+
+# Laravel
+/vendor/
+/storage/
+#/public/uploads/
+#/public/downloads/
+
+# Media files
+#/public/images/*.mp4
+#/public/images/*.jpg
+#/public/images/*.png
+
+# Documents uploaded by users
+#/public/companies/
+#/public/documents/
+
+# Large files
+*.mp4
+*.pdf
+*.tar
+*.sql

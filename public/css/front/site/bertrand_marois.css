@@ -1,0 +1,212 @@
+@charset "utf-8";
+/* CSS Document */
+
+a {
+    color: #e4b331;
+}
+
+a:hover, a:focus {
+    color: #fff !important;
+    text-decoration: underline;
+}
+
+address.pull-right {
+	padding: 10px;
+    color: #fff;
+    background: #33221a;
+}
+
+h2.separator {
+	display:none;
+}
+
+.pull-right a:hover, a:hover, a:focus {
+    color: #e4b331 !important;
+
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.nav li {
+    border-radius: 0 !important;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #33221a;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #26150d;
+    border-color: #26150d;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+    color: #ffffff;
+    background-color: #33221a;
+    border-color: #33221a;
+}
+
+.page-title h2.entry-title {
+    margin: 0;
+    display: none;
+    padding: 5px 5px 5px 15px;
+    font-size: 1.75em;
+}
+
+.copyright {
+    line-height: 0.8em;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+.modal-body {
+    position: relative;
+    padding: 5px;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+    background-clip: padding-box;
+    outline: none;
+}
+
+#tourisme-tab.tab-pane .table-striped {
+	display:none;
+}
+
+#ariane {
+    background-color: #e7e7e7;
+    color: #222;
+    margin: 0;
+    display: none !important;
+    padding: 0 12px 0 12px;
+    float: none !important;
+}
+
+#medias-photo-tab {
+	margin-top: 20px;
+	border-top: 5px solid #26150d;
+}
+
+#main-content {
+	margin-top: 20px;
+}
+
+#index_newsletter {
+	width: 24.5%;
+    float: left;
+    color: #fff;
+    background-color: #d91334;
+    padding: 10px 20px 40px 20px;
+    min-height: 344px;
+}
+
+#index_newsletter .send-btn {
+    color: #fff;
+    padding: 10px 10px;
+    width: 100%;
+    font-size: 0.84em;
+    background: #33221a;
+    border: 2px solid #33221a;
+}
+
+#footer_newsletter {
+    color: #fff;
+    background-color: #d91334;
+    padding: 10px 20px 40px 20px;
+}
+/*
+#carousel_index {
+    max-width: 100%;
+    float: left;
+    width: 100%;
+}
+*/
+.creator {
+    line-height: 34px;
+    color: #ccc;
+}
+
+.nav-footer {
+    background-color: transparent;
+    padding: 5px;
+}
+
+.footer.container-fluid {
+	background: #26150d;
+}
+
+#header .topnav .container {
+    position: relative;
+    padding: 0 15px;
+    background-position: 3%;
+    max-width: 1170px;
+    background-image: url(/images/BertrandMarois/LeChicPourHomme_Designer_Bertrand_Marois.png);
+    background-repeat: no-repeat;
+}
+
+#header .topnav {
+    background: #fff !important;
+	border-bottom: 5px solid #26150d;
+}
+
+#logo_company_site img {
+    margin: 0 auto;
+    min-width: auto;
+	float:left;
+}
+
+.ekko-lightbox-nav-overlay > a {
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  #header .topnav .container {
+      position: relative;
+      padding: 0 15px;
+      background-position: 0 2%;
+      max-width: 1170px;
+      background-image: url(/images/BertrandMarois/LeChicPourHomme_Designer_Bertrand_Marois.png);
+      background-repeat: no-repeat;
+  }
+}
+@media (max-width: 767px)
+{
+
+  #index_newsletter {
+      width: 100% !important;
+      float: left;
+      color: #fff;
+      background-color: #d91334;
+      padding: 10px 20px 40px 20px;
+      min-height: 344px;
+  }
+  div#main-content p img {
+  	margin: 10px 0px !important;
+  }
+  address.pull-right {
+      padding: 10px;
+      width: 100%;
+      color: #fff;
+      background: #33221a;
+  }
+  #header .topnav .container {
+      position: relative;
+      padding: 0 15px;
+      max-width: 1170px;
+      background-image: none;
+  }
+}

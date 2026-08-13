@@ -1,0 +1,27 @@
+
+/*Ekko-lightbox custom
+ * Particulièrement pour rajouter les flêches sur les vidéos
+*/
+.ekko-lightbox-nav-overlay{
+    display: block !important;
+    opacity: 1 !important;
+    height: auto !important;
+    top: 50% !important;
+}
+
+.ekko-lightbox-nav-overlay a{
+    opacity: 1 !important;
+    width: 50% !important;
+    text-shadow: none !important;
+    color: transparent;
+    float:left;
+}
+
+.ekko-lightbox-nav-overlay a:last-child span{
+    text-align:right;
+}
+
+.ekko-lightbox-nav-overlay a:hover{
+    color: #20507D;
+}
+/*End of Ekko-lightbox custom*/

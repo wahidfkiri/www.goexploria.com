@@ -1,0 +1,272 @@
+/*
+MAIN theme color
+  #07889b Vert foncé
+	#e37222 Orange foncé
+*/
+ 
+/** Style général */
+ .rubrique-content ul li {
+    display: block !important;
+    font-size: 16px;
+    padding: 10px;
+    color: #ffffff;
+ }
+ 
+ .rubrique-content {
+    display: none;
+    padding: 0px;
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    left: 0px;
+ }
+
+ .rubrique-title {
+    color: #fff;
+    line-height: 30px;
+    display: block;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    padding-left: 5px;
+    padding-right: 5px;
+ }
+
+ .rubrique-title:hover{
+    color:#333;
+ }
+
+ .rubrique-content div{
+    padding-right: 0px;
+    padding-left: 0px;
+    border-left: 1px solid white;
+    height:304px;
+ }
+
+.rubrique-content div:first-of-type{
+    border-left: 0px;
+ }
+
+ .main-blue {
+    background: #01b7f2;
+ }
+
+ .first-blue{
+    background: #01b7f2;
+ }
+
+ .second-blue {
+    background: #01b7f2;
+ }
+
+
+ .rubrique > a {
+    font-size: 18px;
+ }
+ 
+ #main-menu {
+    overflow: visible;
+ }
+ 
+ header {
+    /* margin-bottom: 10px; */
+ }
+
+.custom-block {
+    display:block;
+}
+
+.croix, .menu-mobile-more {
+    float: right;
+    font-size: 1.5em;
+}
+
+.croix:hover, .menu-mobile-more:hover {
+    color:black;
+}
+
+.menu-fixe {
+  position:fixed !important;
+  width:100%;
+}
+
+.main-header{
+  background-color: #01b7f2;
+}
+
+.logo-exploria img {
+  height: 60px;
+  width: auto;
+}
+
+.head{
+    border-bottom: solid 1px white;
+}
+
+.section-main {
+  /* padding-top: 150px; */
+  clear: both;
+}
+
+.menu-picture {
+  padding:5px;
+}
+
+.menu-picture img {
+  width: auto;
+  max-height: 295px;
+}
+
+.rubrique  {
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/** Responsive */
+
+.mobile-menu-toggle {
+  width: 60px !important;
+  height: 60px !important;
+}
+.mobile-menu .menu {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 200px;
+}
+.mobile-menu ul a:before {
+    display: none;
+    padding:5px;
+    content: "" !important;
+ }
+
+.mobile-menu ul a:before {
+    content: "" !important;
+ }
+
+.mobile-menu .sub, .mobile-menu .sub-menu {
+    padding-left: 5px;
+ }
+
+#header .mobile-menu a {
+	padding: 7px;
+}
+
+/* NAV main menu */
+.nav {
+	margin-left: 190px;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:focus {
+	background: none !important;
+}
+
+.nav a .rubrique-title {
+	color: #e7e7e7 !important;
+	font-weight: bold;
+}
+
+.nav a .rubrique-title:hover,
+.nav a .rubrique-title:focus {
+	color: #fff !important;
+}
+
+/* SUBNAV */
+.subnav {
+  background-color: #fff;
+  z-index: 9990;
+  height: -45px;
+  position: absolute;
+  width: 100%;
+  top: -45px;
+}
+
+.subnav > .nav-item {
+	display: block;  
+  /*border-top: 1px solid #111;  
+   border-right: 1px solid #111; 
+  border-bottom: 1px solid #111; */ 
+  /* margin:1px 0 0 0; */
+  margin:0;  
+	height: 150px;
+  width: 16.66%;
+  float: left;
+  background-size: cover;
+  
+}
+
+.subnav > .nav-item:last-child {
+	width: 16.69%;
+	border-right: 0;
+}
+
+.subnav > .nav-item > a {
+	display: block;
+	text-align: center;
+	position: relative;
+	color: #fff;
+	/*height: 150px;*/
+	min-height: 150px;
+	height: auto;
+	box-shadow: 0 150px rgba(0, 0, 0, 0.55) inset;
+	
+}
+
+.subnav > .nav-item > a:hover {
+	box-shadow: none;
+}
+
+.subnav > .nav-item > a:hover span {
+	box-shadow: 0 36px rgba(0, 0, 0, 0.65) inset;
+}
+	
+.subnav > .nav-item > a span {
+	display: block;
+	position: absolute;
+	top: 114px;
+	text-align: center;
+	width: 100%;
+	height: 36px;
+	box-shadow: 0 36px rgba(255, 255, 255, 0.15) inset;
+	font-weight: bold;
+	font-size: 1.3em;
+	line-height: 33px;
+	color: #fff;
+}
+
+.subnav > .nav-item .nav-subitem {
+	display: none;
+	z-index: 10010;
+}
+
+.subnav > .nav-item .nav-subitem a {
+	display: block;
+	text-align: left;
+	position: relative;
+	color: #;
+	height: 34px;
+	background-color: #222;
+	margin: 0px 0 0px;
+	z-index: 10010;
+}
+
+.subnav > .nav-item .nav-subitem a:hover {
+	
+}
+
+.subnav > .nav-item  .nav-subitem a span {
+	display: block;
+	text-align: left;
+	width: 100%;
+	height: 34px;
+	font-size: 1.3em;
+	line-height: 34px;
+	color: #fff;
+	padding-left: 5%;
+}
+
+.subnav > .nav-item  .nav-subitem a span:hover {
+	color: #07889b;
+	color: #e37222;
+}
