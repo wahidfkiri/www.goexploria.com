@@ -1,0 +1,1 @@
+2016 &copy; GoExploria ~ Tous droits réservés
