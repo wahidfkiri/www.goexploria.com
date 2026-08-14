@@ -1987,3 +1987,78 @@ a.contact-link {
         height: 200px !important;
     }
 }
+
+/* ==========================================================================
+   Fix full width header / navigation
+   --------------------------------------------------------------------------
+   Le contenu injecté par le CMS (home_intro) contient des iframes YouTube en
+   largeur fixe (width="560"). Sur mobile le document devenait plus large que
+   la fenêtre (565px pour un viewport de 375px) : le header, la navigation et
+   le sous-menu — dimensionnés en 100% du viewport — ne couvraient plus toute
+   la page et laissaient un espace vide à droite au défilement horizontal.
+   ========================================================================== */
+
+/* Filet de sécurité : aucun débordement horizontal possible, le header reste
+   donc toujours aussi large que les autres sections.
+   Les trois propriétés sont nécessaires pour que Safari iOS clippe réellement
+   le débordement (iPhone : décalage du header vers la gauche). */
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+}
+
+/* Les médias insérés depuis l'administration ne débordent plus du conteneur. */
+.home-page-intro,
+.home-page-outro {
+    max-width: 100%;
+}
+
+.home-page-intro img,
+.home-page-outro img,
+.home-page-intro iframe,
+.home-page-outro iframe,
+.home-page-intro embed,
+.home-page-outro embed,
+.home-page-intro object,
+.home-page-outro object,
+.home-page-intro video,
+.home-page-outro video,
+.home-page-intro table,
+.home-page-outro table {
+    max-width: 100%;
+}
+
+@media (max-width: 991px) {
+    /* Vidéos fluides en conservant le ratio 16/9 plutôt qu'une simple
+       troncature de la largeur. */
+    .home-page-intro iframe,
+    .home-page-outro iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    /* Le header occupe toute la largeur, comme les autres sections. */
+    #header,
+    #header .metanav,
+    #header .topnav,
+    #header .header-search,
+    #header .subnav,
+    #header .menu-single-bar {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    #header .metanav .container,
+    #header .topnav .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
