@@ -31,7 +31,7 @@ nbproject/
 
 # Archives et dumps
 *.tar
-*.sql
+#*.sql
 *.xml
 
 # Garder les fichiers uploadés
@@ -60,4 +60,4 @@ nbproject/
 *.mp4
 *.pdf
 *.tar
-*.sql
+#*.sql
